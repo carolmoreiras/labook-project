@@ -1,4 +1,4 @@
--- Active: 1684012103952@@127.0.0.1@3306
+-- Active: 1685203978773@@127.0.0.1@3306
 CREATE TABLE likes_posts (
   post_id TEXT NOT NULL,
   user_id TEXT NOT NULL,
