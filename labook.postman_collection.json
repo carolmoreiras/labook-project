@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "65537054-dda0-4add-8dd1-5eef4e6f736a",
+		"name": "labook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23130585"
+	},
+	"item": [
+		{
+			"name": "SINGUP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"davi\",\r\n    \"email\": \"davi@davi.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"davigs@hotmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET POSTS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzgzYTU1My02N2E5LTQyNDYtYjdkMC01MDUwODg4OTNjOGMiLCJuYW1lIjoiZGF2aSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2ODUwNjIwMTcsImV4cCI6MTY4NTA2NTYxN30.X7ZjnG7gawIie_Qz-tai87axTNh6KHqgaWGEsN09kC8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzgzYTU1My02N2E5LTQyNDYtYjdkMC01MDUwODg4OTNjOGMiLCJuYW1lIjoiZGF2aSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2ODQ4ODYwMzIsImV4cCI6MTY4NDg4OTYzMn0.wzbe9CyH-fsFeTAAGZYLzAFFIVLvJZiVVKXAqWnmIEo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"outro post\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDIT POST",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzgzYTU1My02N2E5LTQyNDYtYjdkMC01MDUwODg4OTNjOGMiLCJuYW1lIjoiZGF2aSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2ODQ4ODYwMzIsImV4cCI6MTY4NDg4OTYzMn0.wzbe9CyH-fsFeTAAGZYLzAFFIVLvJZiVVKXAqWnmIEo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"novo conteúdo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/posts/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"posts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "c370ee5c-5e4d-4512-ab33-a195b331afef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE POST",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzgzYTU1My02N2E5LTQyNDYtYjdkMC01MDUwODg4OTNjOGMiLCJuYW1lIjoiZGF2aSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2ODUwNjIwMTcsImV4cCI6MTY4NTA2NTYxN30.X7ZjnG7gawIie_Qz-tai87axTNh6KHqgaWGEsN09kC8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/posts/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"posts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "95559e7e-9d4e-42ac-adab-e51635fe71cb"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIKE POST",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"like\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/posts/:id/like",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"posts",
+						":id",
+						"like"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
