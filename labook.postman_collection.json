@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "65537054-dda0-4add-8dd1-5eef4e6f736a",
+		"_postman_id": "878ea4d5-28be-4d51-a342-7cb5e805471b",
 		"name": "labook",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "23130585"
+		"_exporter_id": "25826690"
 	},
 	"item": [
 		{
@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"davi\",\r\n    \"email\": \"davi@davi.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"raw": "{\r\n    \"name\": \"carol\",\r\n    \"email\": \"carol@carol.com\",\r\n    \"password\": \"123456\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -41,7 +41,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"davigs@hotmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"raw": "{\r\n    \"email\": \"carol@carol.com\",\r\n    \"password\": \"123456\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
